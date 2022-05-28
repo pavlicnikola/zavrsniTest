@@ -35,6 +35,12 @@ form {
     width: 30%;
 }
 
+span {
+    color: red;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
 #napomena {
     width: 35%;
 }
@@ -47,6 +53,10 @@ form {
     width: 10%;
     padding: 1%;
     margin-left: 15%;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #ispisNarudzbina {

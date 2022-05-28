@@ -11,18 +11,27 @@
 <body>
     <form action="">
         <div id="formaDiv">
-            <label for="kupac">Купац:</label>
+            <label for="kupac">Купац:<span>*</span></label>
             <input type="text" name="kupac" id="kupac">
     
-            <label for="dinosaur">Диносаурус:</label>
+            <label for="dinosaur">Диносаурус:<span>*</span></label>
             <select name="dinosaur" id="dinosaur">
                 <option value="test" disabled selected>TEST</option>
+                <option value="Scipionyx">Scipionyx</option>
+                <option value="Becklespinax">Becklespinax</option>
+                <option value="Sciurumimus">Sciurumimus</option>
+                <option value="Hypsilophodon">Hypsilophodon</option>
+                <option value="Dacentrurus">Dacentrurus</option>
+                <option value="Iguanodon">Iguanodon</option>
+                <option value="Asylosaurus">Asylosaurus</option>
+                <option value="Efraasia">Efraasia</option>
+                <option value="Cryptosaurus">Cryptosaurus</option>
             </select>
     
             <label for="napomena">Напомена:</label>
             <textarea name="napomena" id="napomena" cols="30" rows="5"></textarea>
         </div>
-        
+
         <button id="naruci">наручи</button>
     </form>
 
@@ -30,6 +39,10 @@
 
     <div id="naslov">
         Наруџбине:
+    </div>
+
+    <div id="divIspisNarucenog">
+
     </div>
 </body>
 </html>
