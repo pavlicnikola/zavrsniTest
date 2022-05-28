@@ -89,6 +89,10 @@ buttonNaruci.addEventListener('click',(event) => {
         alert ('neispravan izbor dinosaurusa')
     }
 
+    if (textareaNapomena.value.length == 0) {
+        textareaNapomena.value += 'нема напомене'
+    }
+
     let dinoCena = 0
 
     // for(let i = 0; i <= dinos.length; i++) {
@@ -96,7 +100,7 @@ buttonNaruci.addEventListener('click',(event) => {
     //         dinoCena = dinos[i].cena
     //     }
     // }
-    
+
     if (selectDino.value == 'Scipionyx') {
         dinoCena = 221
     } else if (selectDino.value == 'Becklespinax') {
@@ -153,10 +157,9 @@ buttonIspisNarudzbina.addEventListener('click', (event) => {
             divNarudzbina.append(pKupac, pNapomena, pDinosaurus, pCena, bObrisi)
             divNarudzbina.classList.add("divNarudzbina")
             divIspisNarucenog.append(divNarudzbina)
-
-            console.log(nizNarudzbina);
         })
     } else {
         alert('nema narudzbina')
     }
+        console.log(nizNarudzbina);
 })
