@@ -138,13 +138,16 @@ buttonIspisNarudzbina.addEventListener('click', (event) => {
             const pNapomena = document.createElement('p')
             const pDinosaurus = document.createElement('p')
             const pCena = document.createElement('p')
+            const bObrisi = document.createElement('button')
 
-            pKupac.textContent = 'Купац: ' + element.kupac
-            pNapomena.textContent = 'Напомена: ' + element.napomena
-            pDinosaurus.textContent = 'Диносаурус: ' + element.dinosaurus
-            pCena.textContent = 'Цена: ' + element.cena
+            pKupac.innerHTML = '<span>Купац: </span>' + element.kupac
+            pNapomena.innerHTML = '<span>Напомена: </span>' + element.napomena
+            pDinosaurus.innerHTML = '<span>Диносаурус: </span>' + element.dinosaurus
+            pCena.innerHTML = '<span>Цена: </span>' + element.cena
+            bObrisi.innerHTML = 'Обриши'
 
-            divNarudzbina.append(pKupac, pNapomena, pDinosaurus, pCena)
+            divNarudzbina.append(pKupac, pNapomena, pDinosaurus, pCena, bObrisi)
+            divNarudzbina.classList.add("divNarudzbina")
             divIspisNarucenog.append(divNarudzbina)
         })
     } else {

@@ -7,7 +7,7 @@
 body {
     background-color: rgb(47, 63, 47);
     font-weight: 800;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif;
 }
 
 form {
@@ -61,7 +61,7 @@ button:hover {
 
 #ispisNarudzbina {
 margin-left: 27.5%;
-width: 12%;
+width: 11%;
 }
 
 #naslov {
@@ -74,4 +74,22 @@ width: 12%;
     padding: 1.5% 0;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+}
+
+.divNarudzbina {
+    width: 43%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.1rem;
+    padding-bottom: 2%;
+    border-bottom: 3px solid black;
+}
+
+.divNarudzbina button {
+    width: 12%;
+}
+
+.divNarudzbina span {
+    color: green;
 }
