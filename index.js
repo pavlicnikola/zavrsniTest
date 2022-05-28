@@ -79,7 +79,7 @@ buttonNaruci.addEventListener('click',(event) => {
     let text = inputKupac.value
     let slovo = text.charAt(text.indexOf(' ') + 1)
 
-    if (inputKupac.value.length < 4 || inputKupac.value.charAt(0).toLowerCase() == inputKupac.value.charAt(0) || inputKupac.value.indexOf(' ') == -1 || slovo.toLowerCase() == slovo) {
+    if (text.length < 4 || text.charAt(0).toLowerCase() == text.charAt(0) || text.indexOf(' ') == -1 || slovo.toLowerCase() == slovo) {
         ispravno = false
         alert ('neispravan unos imena i prezimena')
     }
