@@ -90,11 +90,13 @@ buttonNaruci.addEventListener('click',(event) => {
     }
 
     let dinoCena = 0
+
     // for(let i = 0; i <= dinos.length; i++) {
     //     if(selectDino.value == dinos[i].name) {
     //         dinoCena = dinos[i].cena
     //     }
     // }
+    
     if (selectDino.value == 'Scipionyx') {
         dinoCena = 221
     } else if (selectDino.value == 'Becklespinax') {
