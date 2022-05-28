@@ -155,8 +155,14 @@ buttonIspisNarudzbina.addEventListener('click', (event) => {
             bObrisi.innerHTML = 'Обриши'
 
             divNarudzbina.append(pKupac, pNapomena, pDinosaurus, pCena, bObrisi)
-            divNarudzbina.classList.add("divNarudzbina")
+            divNarudzbina.classList.add('divNarudzbina')
             divIspisNarucenog.append(divNarudzbina)
+
+            bObrisi.addEventListener('click', (event) => {
+                nizNarudzbina.splice(nizNarudzbina.indexOf(), 1)
+                divNarudzbina.classList.add('noBorder')
+                divNarudzbina.textContent = ''
+            })
         })
     } else {
         alert('nema narudzbina')

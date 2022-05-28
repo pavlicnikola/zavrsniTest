@@ -88,6 +88,10 @@ width: 11%;
     margin-bottom: 2%;
 }
 
+.noBorder {
+    border: none;
+}
+
 .divNarudzbina button {
     width: 10%;
 }
