@@ -138,9 +138,12 @@ buttonNaruci.addEventListener('click',(event) => {
 
 buttonIspisNarudzbina.addEventListener('click', (event) => {
     divIspisNarucenog.textContent = ''
+    let brojac = -1
 
     if (nizNarudzbina.length != 0) {
         nizNarudzbina.forEach(element => {
+            brojac = brojac + 1
+
             const divNarudzbina = document.createElement('div')
             const pKupac = document.createElement('p')
             const pNapomena = document.createElement('p')
@@ -159,9 +162,10 @@ buttonIspisNarudzbina.addEventListener('click', (event) => {
             divIspisNarucenog.append(divNarudzbina)
 
             bObrisi.addEventListener('click', (event) => {
-                nizNarudzbina.splice(nizNarudzbina.indexOf(), 1)
+                nizNarudzbina.splice( brojac, 1)
                 divNarudzbina.classList.add('noBorder')
                 divNarudzbina.textContent = ''
+                console.log(brojac);
             })
         })
     } else {
