@@ -76,8 +76,10 @@ buttonNaruci.addEventListener('click',(event) => {
     event.preventDefault()
 
     let ispravno = true
+    let text = inputKupac.value
+    let slovo = text.charAt(text.indexOf(' ') + 1)
 
-    if (inputKupac.value.length < 4 || inputKupac.value.charAt(0).toLowerCase() == inputKupac.value.charAt(0) || inputKupac.value.indexOf(' ') == -1) {
+    if (inputKupac.value.length < 4 || inputKupac.value.charAt(0).toLowerCase() == inputKupac.value.charAt(0) || inputKupac.value.indexOf(' ') == -1 || slovo.toLowerCase() == slovo) {
         ispravno = false
         alert ('neispravan unos imena i prezimena')
     }
@@ -149,6 +151,8 @@ buttonIspisNarudzbina.addEventListener('click', (event) => {
             divNarudzbina.append(pKupac, pNapomena, pDinosaurus, pCena, bObrisi)
             divNarudzbina.classList.add("divNarudzbina")
             divIspisNarucenog.append(divNarudzbina)
+
+            console.log(nizNarudzbina);
         })
     } else {
         alert('nema narudzbina')
